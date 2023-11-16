@@ -38,6 +38,7 @@ header {
   padding: 10px;
   border: 2px solid #000;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .frame2 {
@@ -46,6 +47,14 @@ header {
   padding: 20px;
   border: 2px solid #000;
   margin: 0 auto;
+}
+
+.frame3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1;
+  grid-template-areas: "pic1 pic2 pic3 pic4 pic5";
+  grid-gap: 1vh;
 }
 
 p {
@@ -84,7 +93,42 @@ input {
 }
 
 .banksy {
-  width: 300px;
-  height: auto;
-  margin: 0 auto;
+  width: auto;
+  height: 100px;
+  grid-area: pic1;
+  border: 1px solid #000;
+}
+
+.ju {
+  height: 100px;
+  width: auto;
+  grid-area: pic2;
+  border: 1px solid #000;
+}
+
+.bison {
+  height: 100px;
+  width: auto;
+  grid-area: pic3;
+  border: 1px solid #000;
+}
+
+.flyer {
+  height: 100px;
+  width: auto;
+  grid-area: pic4;
+  border: 1px solid #000;
+}
+
+.salmon {
+  height: 100px;
+  width: auto;
+  grid-area: pic5;
+  border: 1px solid #000;
+}
+
+.banksy1 {
+  height: 400px;
+  width: auto;
+  border: 1px solid #000;
 }
