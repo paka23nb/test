@@ -13,6 +13,7 @@ h3 {
 
 body {
   background-color: #ffe5b4;
+  animation: changeColor 3s infinite;
 }
 
 header {
@@ -25,6 +26,12 @@ header {
   border: 2px solid #000;
 }
 
+/*
+.profile:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.2);
+}
+*/
 .image {
   text-align: center;
   margin: 20px;
@@ -131,4 +138,33 @@ input {
   height: 400px;
   width: auto;
   border: 1px solid #000;
+}
+
+/*
+.banksy:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.5);
+}
+*/
+
+#image {
+  transition: transform 0.5s ease-in-out;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #ffe5b4;
+  }
+
+  33% {
+    background-color: #ff8c00;
+  }
+
+  66% {
+    background-color: #ff5470;
+  }
+
+  100% {
+    background-color: #ffe5b4;
+  }
 }

@@ -15,21 +15,25 @@
 
     <div class="frame2">
       <h3>here you can contact me about any questions you have</h3>
-      <form action="contact form">
+      <form>
         <label for="name">Name and last name:</label>
         <br />
-        <input type="text" name="name" class="box" />
+        <input type="text" name="name" class="box" id="name" />
         <br />
         <label for="email">E-mail:</label>
         <br />
-        <input type="email" name="E-mail" class="box" />
+        <input type="email" name="E-mail" class="box" id="mail" />
         <br />
         <label for="question">Your question:</label>
         <br />
-        <input type="text" name="question" class="bigbox" />
+        <input type="text" name="question" class="bigbox" id="message" />
         <br />
-        <input type="submit" name="submit" />
+        <!--Code submited by Max Was-->
+        <input type="button" onclick="return sendInfo()" value="Submit" />
       </form>
+      <p id="result"></p>
+      <p><a href="index.html">Press here to go back home.</a></p>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
