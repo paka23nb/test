@@ -168,3 +168,11 @@ input {
     background-color: #ffe5b4;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .frame3 {
+    grid-template-areas: "pic1 pic2 pic3";
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1vh;
+  }
+}
